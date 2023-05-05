@@ -6,8 +6,19 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-
-    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-        <Button x:Name="myButton" Click="myButton_Click">Click Me</Button>
-    </StackPanel>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="70*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <DropDownButton Grid.Row="0" Grid.Column="1" Content="Выбор таблиц" HorizontalAlignment="Left" VerticalAlignment="Center"> </DropDownButton>
+        <MenuBar Grid.Row="0" Grid.Column="0" VerticalAlignment="Top">
+            <MenuBarItem Name="item1" Title="Таблица1">
+            </MenuBarItem>
+        </MenuBar>
+    </Grid>
 </Window>
