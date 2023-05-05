@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "ArtGallary (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "ArtGallary (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
